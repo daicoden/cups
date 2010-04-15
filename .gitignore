@@ -10,3 +10,5 @@ doc
 *.gem
 ext/build.sh
 website/*
+*~
+*.sw*
