@@ -10,7 +10,7 @@ module Printable
     # state. If it gets stopped, cancelled, aborted or completes,
     # run the block passed with #print!
     Thread.new do
-      end_states = [:stopped, :cancelled, :aborted, :completed]
+      end_states = ['Stopped', 'Cancelled', 'Aborted', 'Completed']
       loop do
         state = @print_job.state
         block.call(state) and return if end_states.include?(state)
